@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TestApp:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TestApp_jar</output-path>
+    <root id="archive" name="TestApp.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$USER_HOME$/Desktop/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="TestApp" />
+      <element id="extracted-dir" path="C:/OpenCVWin/opencv/build/java/opencv-320.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/javacv.jar/javacv.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
