@@ -1056,7 +1056,7 @@ public class Controller implements Initializable{
         }
         if(100-recognizeResult<=0){
             recognizeResult=0;
-            progressBar.setProgress(100.0);
+            progressBar.setProgress(0.05);
         }
 
 
