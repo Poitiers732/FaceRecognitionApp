@@ -14,10 +14,7 @@ import org.opencv.core.Core;
 
 import javafx.scene.layout.BorderPane;
 
-
 public class Main extends Application {
-
-
 
     @Override
     public void start(Stage primaryStage) {
@@ -34,7 +31,7 @@ public class Main extends Application {
             scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
             // create the stage with the given title and the previously created
             // scene
-            primaryStage.setTitle("Camera Calibration");
+            primaryStage.setTitle("Face Recognition");
             primaryStage.setScene(scene);
             // init the controller variables
             Controller controller = loader.getController();
