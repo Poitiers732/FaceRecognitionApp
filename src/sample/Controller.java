@@ -187,6 +187,10 @@ public class Controller implements Initializable{
         } catch (Exception e) {
         }
 
+        if(recognizeResult>100){
+            recognizeResult=100;
+        }
+
         return (100-(int) recognizeResult);
     }
 
@@ -1024,6 +1028,10 @@ public class Controller implements Initializable{
             System.out.println("Error recognizeFromTxt");
         }
 
+        if((100-recognizeResult)<0){
+            recognizeResult=100;
+        }
+
         progressBar.setProgress((100-recognizeResult)/100);
         progressBar.setAccessibleText(Double.toString(100-recognizeResult));
 
@@ -1040,10 +1048,14 @@ public class Controller implements Initializable{
             progressBar.setStyle("-fx-accent: green;");
             jakiePodobienstwo = "WYSOKIE";
         }
-        if(recognizeResult==0){
+        if(100-recognizeResult>95){
             jakiePodobienstwo = "IDENTYCZNE";
             result = "100";
             progressBar.setStyle("-fx-accent: green;");
+            progressBar.setProgress(100.0);
+        }
+        if(100-recognizeResult<=0){
+            recognizeResult=0;
             progressBar.setProgress(100.0);
         }
 
