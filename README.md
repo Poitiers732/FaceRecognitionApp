@@ -5,4 +5,4 @@ Warning: The app is pretty bad in effectiveness right now (04.10.2017). Need to 
 After implementing more precise landmark detection method should work fine (yeah, easy to say). The project is a good base if your
 intention is to focus mainly on facial points.
 
-In case you wanna conntact me: wojciech.zdro@gmail.com
+In case you wanna conntact me: wojciech.zdro[]gmail.com
